@@ -1,0 +1,36 @@
+.Navbar {
+  background-color: rgb(41, 40, 38);
+  color: white;
+}
+
+.Navbar-header {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-decoration: none;
+
+  font-size: 0.9rem;
+}
+
+.Navbar-header:active,
+.Navbar-header:visited {
+  color: white;
+}
+
+.Navbar-options {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+.Navbar-options a,
+.Navbar-options a:active,
+.Navbar-options a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.Navbar-logo {
+  max-width: 100px;
+  height: auto;
+}
