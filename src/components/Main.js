@@ -1,4 +1,4 @@
-import React, { Fragment, Fregment } from "react";
+import React, { Fragment } from "react";
 import Somos from "../components/Somos";
 import Contacto from "../components/Contacto";
 

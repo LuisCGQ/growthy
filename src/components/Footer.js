@@ -5,10 +5,7 @@ const Footer = () => {
   return (
     <footer className="Footer">
       <div className="container">
-        <p>
-          Esta pagina fue desarrollada por el departamento de programadores de
-          Growthy Investors
-        </p>
+        <p>Esta pagina fue desarrollada por Luis Carlos García Quezada</p>
       </div>
     </footer>
   );

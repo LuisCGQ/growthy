@@ -1,0 +1,44 @@
+.Pagina {
+}
+
+.Pagina-back {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 50px 0;
+  color: white;
+}
+
+.Pagina h2 {
+  margin: 0;
+  padding: 20px 0;
+  color: rgb(249, 211, 66);
+  font-size: 2rem;
+}
+
+.Pagina p {
+  font-size: 1.5rem;
+}
+
+.Pagina img {
+  object-fit: cover;
+  height: 300px;
+  width: 500px;
+  border-radius: 20px;
+}
+
+.imagen {
+  display: flex;
+  justify-content: center;
+}
+
+.Pagina a,
+.Pagina a:visited,
+.Pagina a:active {
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 10px 20px;
+  border-radius: 10px;
+}

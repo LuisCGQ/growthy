@@ -1,6 +1,6 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import growthy from "../img/Growthy.png";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 import "./Navbar.css";
 
@@ -11,14 +11,14 @@ const Navbar = () => {
     <div className="Navbar">
       <div className="container">
         <div className="Navbar-flex">
-          <a className="Navbar-header" href="/">
+          <Link className="Navbar-header" to="/">
             <img
               className="Navbar-logo"
               src={growthy}
               alt="Growthy Investors"
             />
             <h1>Prueba de Growthy Investors</h1>
-          </a>
+          </Link>
           <nav
             className={open ? "burger-menu open" : "burger-menu close"}
             onClick={() => changeOpen(!open)}
@@ -29,21 +29,21 @@ const Navbar = () => {
           </nav>
         </div>
         <nav class="Navbar-options">
-          <a href="/">Direccion General</a>
-          <a href="/">RRHH</a>
-          <a href="/">Programadores</a>
-          <a href="/">Financieros</a>
-          <a href="/">Analistas</a>
-          <a href="/">Bolsa de Trabajo</a>
+          <Link to="/direccion">Direccion General</Link>
+          <Link to="/rrhh">RRHH</Link>
+          <Link to="/programadores">Programadores</Link>
+          <Link to="/financieros">Financieros</Link>
+          <Link to="/analistas">Analistas</Link>
+          <Link to="/bolsa">Bolsa de Trabajo</Link>
         </nav>
         {open ? (
           <nav class="burger-options">
-            <a href="/">Direccion General</a>
-            <a href="/">RRHH</a>
-            <a href="/">Programadores</a>
-            <a href="/">Financieros</a>
-            <a href="/">Analistas</a>
-            <a href="/">Bolsa de Trabajo</a>
+            <Link to="/direccion">Direccion General</Link>
+            <Link to="/rrhh">RRHH</Link>
+            <Link to="/programadores">Programadores</Link>
+            <Link to="/financieros">Financieros</Link>
+            <Link to="/analistas">Analistas</Link>
+            <Link to="/bolsa">Bolsa de Trabajo</Link>
           </nav>
         ) : null}
       </div>
