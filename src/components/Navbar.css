@@ -1,6 +1,7 @@
 .Navbar {
   background-color: rgb(41, 40, 38);
   color: white;
+  margin: 0;
 }
 
 .Navbar-header {
@@ -8,8 +9,7 @@
   justify-content: left;
   align-items: center;
   text-decoration: none;
-
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .Navbar-header:active,
@@ -17,20 +17,102 @@
   color: white;
 }
 
-.Navbar-options {
+.burger-menu {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 10px;
+  flex-direction: column;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  z-index: 5;
+}
+
+@media (min-width: 768px) {
+  .burger-menu {
+    display: none;
+  }
+}
+
+i {
+  background-color: white;
+  width: 32px;
+  height: 4px;
+  margin: 4px;
+  border-radius: 10px;
+  transition: all ease 0.5s;
+}
+
+.open :nth-child(1) {
+  transform: rotate(45deg) translateY(17px);
+}
+.open :nth-child(2) {
+  opacity: 0;
+}
+.open :nth-child(3) {
+  transform: rotate(-45deg) translateY(-17px);
+}
+
+.Navbar-options {
+  padding: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .Navbar-options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 .Navbar-options a,
 .Navbar-options a:active,
 .Navbar-options a:visited {
   color: white;
   text-decoration: none;
+  transition: all ease 0.2s;
+}
+
+.Navbar-options a:hover {
+  transform: scale(1.2);
 }
 
 .Navbar-logo {
   max-width: 100px;
   height: auto;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.burger-options {
+  padding: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  position: fixed;
+  background-color: rgb(41, 40, 38);
+  right: 0;
+  top: 0;
+  animation: 0.2s ease-out 0s 1 slideInFromLeft;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.burger-options a,
+.burger-options a:active,
+.burger-options a:visited {
+  color: white;
+  margin: 20px 0;
+  display: block;
+  text-decoration: none;
+  transition: all ease 0.2s;
 }
