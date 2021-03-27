@@ -69,7 +69,7 @@ function App() {
           render={() => (
             <Pagina
               nombre="Analistas"
-              descripcion="Nuestro equipo de analistas es capaz de identificar las oportunidades de mejora con un enfoque ágil y de impacto, pues al comprender el comportamiento de sus consumidores de manera oportuna, podemos diseñar la mejor estrategia de mercado para cualquier industria."
+              descripcion="Nuestro equipo de analistas es capaz de identificar las oportunidades de mejora con un enfoque ágil y de impacto, pues al comprender el comportamiento de sus consumidores de manera oportuna, podemos diseñar la mejor estrategia de mercado para cualquier industria.npm"
               imagen={analistas}
             />
           )}
